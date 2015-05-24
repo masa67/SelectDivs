@@ -1,0 +1,33 @@
+
+.styled-select-label {
+    display: inline-block;
+}
+
+.styled-select-value-list {
+    display: inline-block;
+}
+.styled-select-value {
+    display: inline-block;
+    height: 16px;
+    width: 200px;
+}
+
+.styled-select-value-wrapper {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.styled-select-list {
+    background-color: white;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    display: none;
+    padding: 4px;
+    position: absolute;
+    width: 200px;
+}
+
+.styled-select-list-item:hover {
+    background-color: #aaa;
+}

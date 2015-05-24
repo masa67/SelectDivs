@@ -1,0 +1,16 @@
+
+.myselect-icon-data {
+    display: table;
+}
+
+.myselect-icon-data:hover {
+    background-color: #aaa;
+}
+
+.myselect-icon {
+    vertical-align: middle;
+}
+
+.myselect-icon, .myselect-data {
+    display: table-cell;
+}
