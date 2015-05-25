@@ -18,6 +18,10 @@
     padding: 4px;
 }
 
+.styled-select-value-wrapper.disabled {
+    background-color: #bbb;
+}
+
 .styled-select-list {
     background-color: white;
     border: 1px solid #aaa;
@@ -30,4 +34,14 @@
 
 .styled-select-list-item:hover {
     background-color: #aaa;
+    cursor: pointer;
+}
+
+.styled-select-list-item.disabled {
+    background-color: white;
+    color: #888;
+}
+
+.styled-select-list-item.disabled:hover {
+    cursor: default;
 }

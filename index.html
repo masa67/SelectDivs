@@ -16,6 +16,7 @@
     <div id="myselect"></div>
     <div id="myselect2"></div>
     <div>Lorem ipsum...</div>
+    <script src="helpers.js"></script>
     <script src="styledSelect.js"></script>
     <script>
         window.onload = function () {
@@ -25,6 +26,7 @@
                 emptyValue: '- please select a value -',
                 options: [
                     {
+                        enabled: true,
                         html: '<div class="myselect-icon"><span class="fa fa-heartbeat"></span></div>' +
                               '<div class="myselect-data">' +
                                   '<b>Boris</b><br><i>My best cat friend</i>' +
@@ -33,9 +35,10 @@
                         value: 0
                     },
                     {
+                        enabled: false,
                         html: '<div class="myselect-icon"><span class="fa fa-paw"></span></div>' +
                               '<div class="myselect-data">' +
-                                  '<b>Timi</b><br><i>My best animal friend</i>' +
+                                  '<b>Timi</b><br><i>My best dog friend</i>' +
                               '</div>',
                         displayValue: 'Timi',
                         value: 1
@@ -48,6 +51,7 @@
                 emptyValue: '- please select a value -',
                 options: [
                     {
+                        enabled: true,
                         html: '<div class="myselect-icon"><span class="fa fa-heartbeat"></span></div>' +
                         '<div class="myselect-data">' +
                         '<b>Boris</b><br><i>My best cat friend</i>' +
@@ -56,15 +60,18 @@
                         value: 0
                     },
                     {
+                        enabled: true,
                         html: '<div class="myselect-icon"><span class="fa fa-paw"></span></div>' +
                         '<div class="myselect-data">' +
-                        '<b>Timi</b><br><i>My best animal friend</i>' +
+                        '<b>Timi</b><br><i>My best dog friend</i>' +
                         '</div>',
                         displayValue: 'Timi',
                         value: 1
                     },
                 ]
             });
+            styledSelect.setEnabled('myselect2', false);
+            styledSelect.setEnabled('myselect2', true);
         };
     </script>
 </body>
